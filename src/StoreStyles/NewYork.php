@@ -12,7 +12,6 @@ use RuntimeException;
 
 class NewYork extends PizzaStore
 {
-
     /**
      * @param string $type
      * @return Pizza

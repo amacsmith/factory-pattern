@@ -1,6 +1,7 @@
 <?php
 
 namespace AMacSmith\FactoryPattern\Pizzas\California;
+
 use AMacSmith\FactoryPattern\Pizza;
 
 class Clam extends Pizza
