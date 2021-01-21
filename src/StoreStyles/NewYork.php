@@ -19,12 +19,21 @@ class NewYork extends PizzaStore
      */
     public function createPizza(string $type): Pizza
     {
-        return match (strtolower($type)) {
-            'cheese' => new Cheese(),
-            'clam' => new Clam(),
-            'greek' => new Greek(),
-            'veggie' => new Veggie(),
-            default => throw new RuntimeException("We don't serve that type of pizza"),
-        };
+        switch ($type) {
+            case 'cheese':
+                return new Cheese();
+                break;
+            case 'clam':
+                return new Clam();
+                break;
+            case 'greek':
+                return new Greek();
+                break;
+            case 'veggie':
+                return new Veggie();
+                break;
+            default:
+                throw new RuntimeException("We don't serve that type of pizza");
+        }
     }
 }
