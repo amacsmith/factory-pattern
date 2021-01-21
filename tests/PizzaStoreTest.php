@@ -2,18 +2,18 @@
 
 namespace AMacSmith\FactoryPattern\Tests;
 
-use AMacSmith\FactoryPattern\Pizzas\NewYork\Cheese as NewYorkCheese;
 use AMacSmith\FactoryPattern\Pizzas\California\Cheese as CaliforniaCheese;
-use AMacSmith\FactoryPattern\Pizzas\Chicago\Cheese as ChicagoCheese;
-use AMacSmith\FactoryPattern\Pizzas\NewYork\Clam as NewYorkClam;
 use AMacSmith\FactoryPattern\Pizzas\California\Clam as CaliforniaClam;
-use AMacSmith\FactoryPattern\Pizzas\Chicago\Clam as ChicagoClam;
-use AMacSmith\FactoryPattern\Pizzas\NewYork\Greek as NewYorkGreek;
 use AMacSmith\FactoryPattern\Pizzas\California\Greek as CaliforniaGreek;
-use AMacSmith\FactoryPattern\Pizzas\Chicago\Greek as ChicagoGreek;
-use AMacSmith\FactoryPattern\Pizzas\NewYork\Veggie as NewYorkVeggie;
 use AMacSmith\FactoryPattern\Pizzas\California\Veggie as CaliforniaVeggie;
+use AMacSmith\FactoryPattern\Pizzas\Chicago\Cheese as ChicagoCheese;
+use AMacSmith\FactoryPattern\Pizzas\Chicago\Clam as ChicagoClam;
+use AMacSmith\FactoryPattern\Pizzas\Chicago\Greek as ChicagoGreek;
 use AMacSmith\FactoryPattern\Pizzas\Chicago\Veggie as ChicagoVeggie;
+use AMacSmith\FactoryPattern\Pizzas\NewYork\Cheese as NewYorkCheese;
+use AMacSmith\FactoryPattern\Pizzas\NewYork\Clam as NewYorkClam;
+use AMacSmith\FactoryPattern\Pizzas\NewYork\Greek as NewYorkGreek;
+use AMacSmith\FactoryPattern\Pizzas\NewYork\Veggie as NewYorkVeggie;
 use AMacSmith\FactoryPattern\PizzaStore;
 use AMacSmith\FactoryPattern\StoreStyles\California;
 use AMacSmith\FactoryPattern\StoreStyles\Chicago;
