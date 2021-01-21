@@ -3,7 +3,12 @@
 namespace AMacSmith\FactoryPattern\StoreStyles;
 
 use AMacSmith\FactoryPattern\Pizza;
+use AMacSmith\FactoryPattern\Pizzas\California\Cheese;
+use AMacSmith\FactoryPattern\Pizzas\California\Clam;
+use AMacSmith\FactoryPattern\Pizzas\California\Greek;
+use AMacSmith\FactoryPattern\Pizzas\California\Veggie;
 use AMacSmith\FactoryPattern\PizzaStore;
+use RuntimeException;
 
 class California extends PizzaStore
 {
@@ -14,19 +19,12 @@ class California extends PizzaStore
      */
     public function createPizza(string $type): Pizza
     {
-        switch (strtolower($type)){
-            case 'cheese':
-                return new
-                break;
-            case 'clam':
-
-                break;
-            case 'greek':
-
-                break;
-            case 'veggie':
-
-                break;
-        }
+        return match (strtolower($type)) {
+            'cheese' => new Cheese(),
+            'clam' => new Clam(),
+            'greek' => new Greek(),
+            'veggie' => new Veggie(),
+            default => throw new RuntimeException("We don't serve that type of pizza"),
+        };
     }
 }

@@ -12,6 +12,8 @@ abstract class PizzaStore
         $pizza->bake();
         $pizza->cut();
         $pizza->box();
+
+        return $pizza;
     }
 
     abstract public function createPizza(string $type): Pizza;
