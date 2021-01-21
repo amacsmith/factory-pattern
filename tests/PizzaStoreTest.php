@@ -72,14 +72,6 @@ class PizzaStoreTest extends TestCase
         $pizza = $this->californiaStore->orderPizza('veggie');
         echo "Betty ordered a {$pizza->getName()}".PHP_EOL.PHP_EOL;
         $this->assertInstanceOf(CaliforniaVeggie::class, $pizza);
-
-
-        $this->expectException(RuntimeException::class);
-        $pizza = $this->chicagoStore->orderPizza('shrimp');
-
-        $this->expectException(RuntimeException::class);
-        $pizza = $this->californiaStore->orderPizza('shrimp');
-
     }
 
     public function test_expect_exception_for_type_new_york()
