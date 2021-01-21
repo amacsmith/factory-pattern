@@ -6,6 +6,7 @@ Implementation of the factory pattern.
 
 [![codecov](https://codecov.io/gh/amacsmith/factory-pattern/branch/main/graph/badge.svg)](https://codecov.io/gh/amacsmith/factory-pattern)
 
+![StyleCI](https://github.styleci.io/repos/331349107/shield?branch=main)
 
 Usage
 
