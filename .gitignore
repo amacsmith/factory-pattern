@@ -17,6 +17,8 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-.idea/
+# IDE
+.idea
 
+# code coverage
 build/
